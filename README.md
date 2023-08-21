@@ -157,17 +157,19 @@ Shadowrocket使用代理链的方法：
 
 * 使用节点A连接，点击节点A后面ⓘ，`代理通过`选择节点B，流量走向：`Client` - `B` - `A` - `Web server`
 ### 配置文件
-Shadowrocket内置了一个配置文件`default.conf`，其中包含了国内外网站的分流规则，满足大多数用户的基本需求。此配置文件的内容跟随应用更新而做不定期的调整。如果在使用过程中错误修改或误删配置文件，可以点击`配置` - `恢复默认配置`。此外，Shadowrocket兼容使用`Clash YAML格式`的配置文件。
+Shadowrocket内置了一个配置文件`default.conf`，其中包含了国内外网站的分流规则，满足大多数用户的基本需求。此配置文件的内容跟随应用更新而做不定期的调整。如果在使用过程中错误修改或误删配置文件，可以点击`配置` - `恢复默认配置`。
 
-Shadowrocket添加配置文件方法：
+添加配置文件的方法：
 
 从URL下载配置
 * 配置 - 右上角➕ - 粘贴配置链接 - 下载 - 点击对应的配置文件 - 使用配置。
 
+* Shadowrocket兼容使用`Clash YAML格式`的配置文件。
+
 从本地存储或云盘导入
 * 配置 - 从云导入，点击对应存储路径的配置文件。
 
-Shadowrocket配置文件的内容编写方法，请参考：
+配置文件的内容编写方法，请参考：
 * [懒人配置](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy.conf)
 
 * [懒人配置（含策略组）](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf)
