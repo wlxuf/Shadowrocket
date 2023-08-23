@@ -211,9 +211,9 @@ Shadowrocket内置了一个配置文件`default.conf`，其中包含了国内外
 ### 添加规则
 * 点击配置文件ⓘ - 规则 - 右上角➕，根据需求选择类型和策略，填写规则内容（类型`RULE-SET`表示规则集）。
 
-* 数据 - 代理 - 启用日志记录，产生网络活动后回到该页面，从最新的日志中查看网络活动记录，点击任一记录查看详情，点击右上角`…`选择类型添加规则。
+* 数据 - 代理 - 启用日志记录，产生网络活动后回到该页面，从最新的日志中查看网络活动记录，点击任一记录查看详情，点击右上角`•••`选择类型添加规则。
 
-blackmatrix7作者的规则集仓库： <https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket>
+[blackmatrix7](https://github.com/blackmatrix7)的规则集仓库： <https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket>
 ### app分流
 根据不同app指定分流规则的方法。
 
@@ -225,7 +225,7 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shado
 ```
 * 点击配置文件ⓘ - 规则 - 右上角➕，类型选择`RULE-SET`，策略选择`PROXY`，输入框内粘贴“规则集链接”，保存完成（策略可以根据需求使用其他选项）。
 
-iOS系统没有常规分应用代理的操作，只能通过`域名` / `ip` / `ua`规则实现app分流效果。可自行抓包，或者订阅blackmatrix7作者的[规则集](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket)。如果引用的链接是域名集，添加规则时，类型请选择`DOMAIN-SET`。
+iOS系统没有常规分应用代理的操作，只能通过`域名` / `ip` / `ua`规则实现app分流效果。可自行抓包，或者订阅[blackmatrix7](https://github.com/blackmatrix7)的[规则集](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket)。如果引用的链接是域名集，添加规则时，类型请选择`DOMAIN-SET`。
 ### 更新规则集
 点击配置文件 - 使用配置。
 ### 修改DNS
@@ -240,7 +240,7 @@ iOS系统没有常规分应用代理的操作，只能通过`域名` / `ip` / `u
 IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
 ```
 ### 代理分组/策略组
-* 点击配置文件ⓘ - 代理分组 - 右上角➕。填写名称，根据需求选择类型，通过`正则`匹配策略，或者从策略输入框后面的`…`手动添加策略，保存。
+* 点击配置文件ⓘ - 代理分组 - 右上角➕。填写名称，根据需求选择类型，通过`正则`匹配策略，或者从策略输入框后面的`•••`手动添加策略，保存。
 
 * 策略是规则的组成部分，创建的代理分组只有放到规则里才能发挥作用。
 进入对应规则的详情页，点击策略选项，从列表中选择代理分组，保存。
