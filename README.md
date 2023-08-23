@@ -49,6 +49,10 @@
 ### 添加节点
 * 首页 - 右上角➕ - 类型Subscribe - URL栏输入机场订阅链接 - 保存。
 
+  `订阅链接后面加上#1、#2、#3…，可以重复添加同一个订阅。示例：`
+  `https://www.example.com#1`
+  `https://www.example.com#2`
+  `https://www.example.com#3`
 * 如果您有自己的服务器节点信息，可在（首页 - 右上角➕）选择对应节点类型，如Shadowsocks、Vmess、VLESS、Socks5、Trojan、Hysteria等，然后填写和保存。
 
 * 如果您已经获得节点链接，如`trojan://xxx`、`vmess://xxx`、`vless://xxx`、`ss://xxx`等，可复制节点链接，打开Shadowrocket时会自动识别导入。
