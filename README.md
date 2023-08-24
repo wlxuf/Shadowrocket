@@ -55,6 +55,9 @@
   `https://www.example.com#3`
 * 如果您有自己的服务器节点信息，可在（首页 - 右上角➕）选择对应节点类型，如Shadowsocks、Vmess、VLESS、Socks5、Trojan、Hysteria等，然后填写和保存。
 
+  `Shadowrocket已支持的类型：`
+  `Shadowsocks、ShadowsocksR、Subscribe（订阅）、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、TUIC、WireGuard、Snell、Brook、Lua。`
+  
 * 如果您已经获得节点链接，如`trojan://xxx`、`vmess://xxx`、`vless://xxx`、`ss://xxx`等，可复制节点链接，打开Shadowrocket时会自动识别导入。
 
 * 首页 - 左上角 - 扫码添加。
@@ -102,7 +105,7 @@ service unavailable 表示域名信息错误或域名被运营商屏蔽。
 
 * 左滑节点 - 二维码，其他设备可以通过扫码添加节点（二维码页面点击右上角的`分享`按钮，可以选择其他形式传送二维码）。
 
-  `节点二维码缺乏统一标准。某些协议（VMESS）的节点，当使用其他代理工具扫码添加时，可能会丢失部分节点信息，导致不能连接。如果遇到此问题，请仔细检查同一个节点的各项配置信息是否一致。`
+  `节点二维码缺乏统一标准。某些协议（Vmess）的节点，当使用其他代理工具扫码添加时，可能会丢失部分节点信息，导致不能连接。如果遇到此问题，请仔细检查同一个节点的各项配置信息是否一致。`
 
 * 点击节点后面ⓘ，滑动至页面底部，有多种分享节点的菜单。
 
