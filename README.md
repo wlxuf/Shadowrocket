@@ -53,12 +53,12 @@
   `https://www.example.com#1`
   `https://www.example.com#2`
   `https://www.example.com#3`
-* 如果您有自己的服务器节点信息，可在（首页 - 右上角➕）选择对应节点类型，如Shadowsocks、Vmess、VLESS、Socks5、Trojan、Hysteria等，然后填写和保存。
+* 如果您有自己的服务器节点信息，可在（首页 - 右上角➕）选择对应节点类型，然后填写和保存。
 
   `Shadowrocket已支持的类型：`
   `Shadowsocks、ShadowsocksR、Subscribe（订阅）、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、TUIC、WireGuard、Snell、Brook、Lua。`
   
-* 如果您已经获得节点链接，如`trojan://xxx`、`vmess://xxx`、`vless://xxx`、`ss://xxx`等，可复制节点链接，打开Shadowrocket时会自动识别导入。
+* 如果您已经获得节点链接，如`trojan://xxx`、`vmess://xxx`、`vless://xxx`等，可复制节点链接，打开Shadowrocket时会自动识别导入。
 
 * 首页 - 左上角 - 扫码添加。
 ### 添加WireGuard节点
