@@ -67,15 +67,12 @@ Shadowrocket快速使用方法：
 ### 添加节点
 * 首页 - 右上角➕ - 类型Subscribe - URL栏输入机场订阅链接 - 保存。
 
-  `订阅链接后面加上#1、#2、#3…，可以重复添加同一个订阅。示例：`
-  `https://www.example.com#1`
-  `https://www.example.com#2`
-  `https://www.example.com#3`
+  `订阅链接后面加上#1、#2、#3…，可以重复添加同一个订阅。`
+
 * 首页 - 右上角➕，选择对应节点类型，填写节点配置信息并保存。
 
-  `Shadowrocket已支持的类型：`
-  `Shadowsocks、ShadowsocksR、Subscribe（订阅）、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、TUIC、WireGuard、Snell、Brook、Lua。`
-  
+  `Shadowrocket已支持的类型：Shadowsocks、ShadowsocksR、Subscribe（订阅）、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、TUIC、WireGuard、Snell、Brook、Lua。`
+
 * 复制节点链接，如`trojan://xxx`、`vmess://xxx`、`vless://xxx`等，打开Shadowrocket时会自动识别导入。
 
 * 首页 - 左上角 - 扫码添加。
