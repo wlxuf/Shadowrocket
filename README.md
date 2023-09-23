@@ -294,7 +294,7 @@ Shadowrocket内置了一个配置文件`default.conf`，其中包含了国内外
 * 替换策略
 * 测试规则
 
-配置文件的内容编写方法，请参考：
+配置文件的纯文本编写方法，请参考：
 * [懒人配置](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy.conf)
 
 * [懒人配置（含策略组）](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf)
