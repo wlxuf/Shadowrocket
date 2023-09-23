@@ -25,6 +25,7 @@ Shadowrocket快速使用方法：
    * [启用回退](#启用回退)
 * 配置
     * [配置文件](#配置文件)
+    * [通用参数](#通用参数)
     * [添加规则](#添加规则)
     * [规则类型](#规则类型)
     * [规则策略](#规则策略)
@@ -280,7 +281,7 @@ Shadowrocket内置了一个配置文件`default.conf`，其中包含了国内外
 * 导出
 
 点击配置文件的ⓘ图标，进入编辑菜单：
-* 通用
+* [通用](#通用参数)
 * 规则
 * Hosts
 * URL重写
@@ -297,6 +298,42 @@ Shadowrocket内置了一个配置文件`default.conf`，其中包含了国内外
 * [懒人配置](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy.conf)
 
 * [懒人配置（含策略组）](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf)
+### 通用参数
+**旁路系统（bypass-system）**：如果禁用此选项，可能会导致一些系统问题，如推送通知延迟。
+
+**跳过代理（skip-proxy）**：此选项强制域名或IP的连接范围由Shadowrocket TUN接口来处理，而不是Shadowrocket代理服务器。此选项用于解决一些应用程序的一些兼容性问题。
+
+**TUN旁路路由（tun-excluded-routes）**：Shadowrocket TUN接口只能处理TCP协议。使用此选项可以绕过指定的IP范围，让其他协议通过。
+
+**DNS覆写（dns-server）**：使用普通DNS或加密DNS（如doh、doq、dot等）覆盖默认的系统DNS。有些dns over https支持http3，所以尝试查询，如果支持就切换到http3，可在doh链接后面加上`#no-h3`关闭。doh强制通过h3查询的写法是将`https`改成`h3`，如`h3://dns.alidns.com/dns-query`。
+
+**备用DNS（fallback-dns-server）**：当覆写DNS查询失败或查询时间超过2秒，Shadowrocket会自动回退备用DNS。如需指定多个DNS，可用逗号分隔。system表示回退到系统DNS。
+
+**启用IPv6支持（ipv6）**：false表示不启用，true表示启用。即使不启用此选项，当本地网络环境支持IPv6，并且节点域名支持IPv6解析，Shadowrocket也会使用节点的IPv6地址进行访问。解决方法是关闭节点域名的IPv6解析，或者在配置文件的`[Host]`项目下为节点域名指定IP地址。
+
+**首选IPv6（prefer-ipv6）**：优先向IPv6的DNS服务器查询AAAA记录，优先使用AAAA记录。false表示不启用。
+
+💡 **dns-direct-system**：直连的域名类规则使用系统dns进行查询。false表示不启用。
+
+💡 **icmp-auto-reply**：ping数据包自动回复。
+
+💡 **always-reject-url-rewrite**：不开启时，「重写的REJECT策略」默认只有在配置模式下生效。开启后，可以令该策略在其他全局路由模式下都生效。
+
+**私有IP应答（private-ip-answer）**：如果不启用该选项，域名解析返回私有IP，Shadowrocket会认为该域名被劫持而强制使用代理。
+
+💡 **dns-direct-fallback-proxy**：直连域名解析失败后使用代理。false表示不启用。
+
+**TUN包含路由（tun-included-routes）**：默认情况下，Shadowrocket接口会声明自己为默认路由，但由于Wi-Fi接口的路由较小，有些流量可能不会通过Shadowrocket接口。使用此选项可以添加一个较小的路由表。
+
+**总是真实IP（always-real-ip）**：这个选项要求Shadowrocket在TUN处理DNS请求时返回一个真实的IP地址而不是假的IP地址。
+
+**DNS劫持（hijack-dns）**：有些设备或软件总是使用硬编码的DNS服务器，例如Netflix通过Google DNS(`8.8.8.8`或`8.8.4.4`)发送请求，您可以使用此选项来劫持查询。
+
+💡 **udp-policy-not-supported-behaviour**：当UDP流量匹配到规则里不支持UDP转发的节点策略时重新选择回退行为，可选行为包括DIRECT、REJECT。DIRECT表示直连转发UDP流量，REJECT表示拒绝转发UDP流量。
+
+**包含配置（include）**：表示当前配置包含另一个配置的内容，当前配置的优先级高于被包含配置。该选项是对配置建立包含关系，以满足同时使用多个配置的需求。
+
+`带💡符号的参数只能通过配置文件的纯文本模式进行设置，没有UI操作选项。`
 ### 添加规则
 * 点击配置文件ⓘ - 规则 - 右上角➕，根据需求选择[规则类型](#规则类型)和[规则策略](#规则策略)，填写规则内容。
 
