@@ -62,7 +62,7 @@ Shadowrocket快速使用方法：
     * [小组件](#小组件)
     * [Today部件](#today部件)
 * 其他
-    * [Warp教程](#warp教程)
+    * [WARP教程](#warp教程)
     * [定位权限](#定位权限)
     * [编译原因](#编译原因)
     * [下载Shadowrocket](#下载shadowrocket)
@@ -708,7 +708,7 @@ iOS 17 以前，桌面小组件只能显示App信息，不支持滚动和开关�
 * **显示Ping值**：启用后，长按小组件中心位置可以测试`Today节点`连通性并显示延迟数字。
 
 * **根据Ping排序**：启用后，长按小组件中心位置可以测试`Today节点`连通性并依延迟大小自动排序。
-### Warp教程
+### WARP教程
 从 1.1.1.1 app提取WireGuard配置信息方法：
 
 1、添加模块。
@@ -744,7 +744,7 @@ iOS 17 以前，桌面小组件只能显示App信息，不支持滚动和开关�
 
 - 填写配置信息，保存。
 
-`如何成为Warp+账户、如何申请Cloudflare Zero Trust团队账户，请自行Google学习。`
+`如何成为WARP+账户、如何申请CloudFlare Zero Trust团队账户，请自行Google学习。`
 ### 定位权限
 * iOS系统的要求，开启定位权限才能获取Wi-Fi名称。
 
