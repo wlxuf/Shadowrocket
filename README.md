@@ -712,7 +712,7 @@ iOS 17 以前，桌面小组件只能显示App信息，不支持滚动和开关�
 从 1.1.1.1 app提取WireGuard配置信息方法：
 
 1、添加模块。
-- [boxjs.rewrite.module](https://raw.githubusercontent.com/wlxuf/add_rule/main/BoxJs.Rewrite.module)
+- [BoxJs.Rewrite.module](https://raw.githubusercontent.com/wlxuf/add_rule/main/BoxJs.Rewrite.module)
 
 - [Cloudflare.1.1.1.1.sgmodule](https://github.com/VirgilClyne/Cloudflare/raw/main/modules/Cloudflare.1.1.1.1.sgmodule)
 
