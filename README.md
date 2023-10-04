@@ -62,6 +62,7 @@ Shadowrocket快速使用方法：
     * [小组件](#小组件)
     * [Today部件](#today部件)
 * 其他
+    * [Warp教程](#warp教程)
     * [定位权限](#定位权限)
     * [编译原因](#编译原因)
     * [下载Shadowrocket](#下载shadowrocket)
