@@ -718,7 +718,7 @@ iOS 17 以前，桌面小组件只能显示App信息，不支持滚动和开关�
 
 2、下载WireGuard客户端，生成密钥对，复制保存备忘录。
 
-3、访问[boxjs](http://boxjs.com/)。
+3、访问[BoxJs](http://boxjs.com/)。
 - 添加订阅 [Cloudflare.beta.boxjs.json](https://github.com/VirgilClyne/Cloudflare/raw/beta/BoxJs/Cloudflare.beta.boxjs.json)
 
 - 应用中点击`Cloudflare:1.1.1.1`选项，填写客户端ID和密钥对，保存。
