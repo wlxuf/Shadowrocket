@@ -341,7 +341,7 @@ Shadowrocket内置了一个配置文件`default.conf`，其中包含了国内外
 * 数据 - 代理 - 启用日志记录，产生网络活动后回到该页面，从最近的日志中查看网络活动记录，点击任一记录查看详情，点击右上角`•••`选择类型添加规则。
 
 * 规则匹配的优先级：
-  * 规则从上到下依次匹配。
+  * 上面规则优先于下面规则。
   * 域名规则优先于IP规则。
 ### 规则类型
 **DOMAIN-SUFFIX**：匹配请求域名的后缀。
@@ -709,7 +709,7 @@ iOS 17 以前，桌面小组件只能显示App信息，不支持滚动和开关�
 
 * **根据Ping排序**：启用后，长按小组件中心位置可以测试`Today节点`连通性并依延迟大小自动排序。
 ### WARP教程
-从 1.1.1.1 app提取WireGuard配置信息方法：
+从 1.1.1.1 app 提取WireGuard配置信息方法：
 
 1、添加模块。
 - [BoxJs.Rewrite.module](https://raw.githubusercontent.com/wlxuf/add_rule/main/BoxJs.Rewrite.module)
