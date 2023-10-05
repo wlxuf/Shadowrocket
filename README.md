@@ -716,7 +716,7 @@ iOS 17 以前，桌面小组件只能显示App信息，不支持滚动和开关�
 
 - [Cloudflare.1.1.1.1.sgmodule](https://github.com/VirgilClyne/Cloudflare/raw/main/modules/Cloudflare.1.1.1.1.sgmodule)
 
-2、下载WireGuard客户端，生成密钥对，复制保存备忘录。
+2、下载[WireGuard](https://apps.apple.com/us/app/wireguard/id1441195209?l=zh-Hans-CN)，生成密钥对，复制保存备忘录。
 
 3、访问[BoxJs](http://boxjs.com)。
 - 添加订阅 [Cloudflare.beta.boxjs.json](https://github.com/VirgilClyne/Cloudflare/raw/beta/BoxJs/Cloudflare.beta.boxjs.json)
