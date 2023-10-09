@@ -709,7 +709,7 @@ iOS 17 以前，桌面小组件只能显示App信息，不支持滚动和开关�
 
 * **根据Ping排序**：启用后，长按小组件中心位置可以测试`Today节点`连通性并依延迟大小自动排序。
 ### WARP教程
-从 [1.1.1.1 app](https://apps.apple.com/us/app/1-1-1-1-faster-internet/id1423538627)提取WireGuard配置信息方法：
+从 [1.1.1.1 app](https://apps.apple.com/us/app/1-1-1-1-faster-internet/id1423538627) 提取WireGuard配置信息方法：
 
 1、添加模块。
 - [BoxJs.Rewrite.module](https://raw.githubusercontent.com/wlxuf/add_rule/main/BoxJs.Rewrite.module)
