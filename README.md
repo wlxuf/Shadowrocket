@@ -280,7 +280,7 @@ Shadowrocket内置了一个配置文件`default.conf`，其中包含了国内外
 * 使用配置
 * 编辑纯文本
 * 更新配置
-* 扩展配置
+* [扩展配置](#扩展配置)
 * 重新命名
 * 导出
 
@@ -302,6 +302,10 @@ Shadowrocket内置了一个配置文件`default.conf`，其中包含了国内外
 * [懒人配置](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy.conf)
 
 * [懒人配置（含策略组）](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf)
+### 扩展配置
+* 从配置a扩展出配置b，此时默认关系是b包含a，也可以理解为b继承了a的内容。配置b优先级高于配置a，该功能是对配置建立包含关系，以满足同时使用多个配置的需求。
+
+* 点击配置文件ⓘ - 通用 - 包含配置，可以修改或解除包含关系。
 ### 通用参数
 **旁路系统（bypass-system）**：如果禁用此选项，可能会导致一些系统问题，如推送通知延迟。
 
