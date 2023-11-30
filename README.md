@@ -532,9 +532,12 @@ ca-p12=证书内容（即剪贴板复制的内容）
 原本是可以省略`ca-passphrase`这行参数。但由于引用的配置文件可能已经包含了证书密码，且证书密码可能不是`Shadowrocket`，为防止出错，因此才增加`ca-passphrase`参数来覆盖引用的配置文件的证书密码。
 ### 模块消失
 模块页面已经开启`保存到iCloud`，如果出现模块消失的问题，请检查：
-* 系统设置 - 账号 - iCloud - 使用iCloud的APP中，Shadowrocket有没有打开同步，若没有，就打开。
 
-* 文件app - iCloud云盘 - Shadowrocket，里面有没有一个文件夹名称叫`Modules`，若没有，就新建一个文件夹，命名为`Modules`。
+* 系统设置 - Apple ID - iCloud - 使用iCloud的APP中，确保Shadowrocket/iCloud云盘已经打开同步。
+
+* 文件app - iCloud云盘 - Shadowrocket，确定其中包含`Modules`和`Script`两个子文件夹。
+
+* 文件app - iCloud云盘 - Shadowrocket - Modules，如果iCloud的本地缓存被清理，此时模块文件是未下载状态，请等待自动下载或手动下载。
 ### 身份证书密码
 Shadowrocket安装CA证书时，如果遇到「输入证书`身份证书`的密码」页面，可以尝试输入：`Shadowrocket`
 ### 微信转圈
