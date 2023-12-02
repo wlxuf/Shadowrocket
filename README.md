@@ -784,7 +784,7 @@ Shadowrocket2.2.29之前的版本是使用Xcode 13.2.1编译的。
 
 Shadowrocket下一个版本`2.2.30`将设置最低安装要求iOS12，然后停止`2.2.29`版本，iOS低版本用户就可以方便安装`2.2.28`版本。
 ### 下载Shadowrocket
-Shadowrocket只有iOS/iPadOS版本和M系列芯片的Mac才能下载，开发者是`Shadow Launch Technology Limited`。**Shadowrocket没有安卓/Windows版本！**
+Shadowrocket只有iOS/iPadOS/tvOS版本和M系列芯片的Mac才能下载，开发者是`Shadow Launch Technology Limited`。**Shadowrocket没有安卓/Windows版本！**
 
 下载方法：
 * 非国区ID登陆App Store，搜索`Shadowrocket`，购买后下载。
