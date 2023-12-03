@@ -417,7 +417,7 @@ Shadowrocket内置了一个配置文件`default.conf`，其中包含了国内外
 
 `PROTOCOL`类型不支持单独使用，只能作为子规则类型嵌套于逻辑规则当中。如`AND,((PROTOCOL,UDP),(DST-PORT,443)),REJECT-NO-DROP`。
 ### 规则策略
-**PROXY**：代理。通过首页正在使用的代理服务器转发流量。
+**PROXY**：代理。通过代理服务器转发流量。
 
 **DIRECT**：直连。连接不经过任何代理服务器。
 
