@@ -65,7 +65,6 @@ Shadowrocket快速使用方法：
     * [隐藏VPN图标](#隐藏vpn图标)
     * [GEOIP数据库](#geoip数据库)
     * [小组件](#小组件)
-    * [Today部件](#today部件)
 * 其他
     * [WARP教程](#warp教程)
     * [定位权限](#定位权限)
