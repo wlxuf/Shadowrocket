@@ -65,7 +65,6 @@ Shadowrocket快速使用方法：
     * [隐藏VPN图标](#隐藏vpn图标)
     * [GEOIP数据库](#geoip数据库)
 * 其他
-    * [WARP教程](#warp教程)
     * [定位权限](#定位权限)
     * [编译原因](#编译原因)
     * [下载Shadowrocket](#下载shadowrocket)
@@ -733,43 +732,6 @@ https://github.com/Masaiki/GeoIP2-CN/raw/release/Country.mmdb
 ```
 https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
 ```
-### WARP教程
-从 [1.1.1.1 app](https://apps.apple.com/us/app/1-1-1-1-faster-internet/id1423538627) 提取WireGuard配置信息方法：
-
-1、添加模块。
-- [BoxJs.Rewrite.module](https://raw.githubusercontent.com/wlxuf/add_rule/main/BoxJs.Rewrite.module)
-
-- [Cloudflare.1.1.1.1.sgmodule](https://github.com/VirgilClyne/Cloudflare/raw/main/modules/Cloudflare.1.1.1.1.sgmodule)
-
-2、下载[WireGuard](https://apps.apple.com/us/app/wireguard/id1441195209?l=zh-Hans-CN)，生成密钥对，复制保存备忘录。
-
-3、访问[BoxJs](http://boxjs.com)。
-- 添加订阅 [Cloudflare.beta.boxjs.json](https://github.com/VirgilClyne/Cloudflare/raw/beta/BoxJs/Cloudflare.beta.boxjs.json)
-
-- 应用中点击`Cloudflare:1.1.1.1`选项，填写客户端ID和密钥对，保存。
-
-- 1.1.1.1 app - 右上角`≡` - 高级 - 诊断，可以复制客户端ID。
-
-4、重启连接Shadowrocket，进入 [1.1.1.1 app](https://warp.plus)。
-- 1.1.1.1 app - 右上角`≡` - 高级 - 连接选项 - 重置加密密钥。
-
-- Shadowrocket - 设置 - 诊断 - VPN日志，找到配置信息。
-	- 地址：endpoint的v4值。
-	- 端口：2408
-	- 私钥：备忘录保存的私钥。
-	- 公钥：public_key的值。
-	- 子网IP：interface的v4值。
-	- DNS：1.1.1.1 。
-	- MTU：1420 。
-	- 心跳间隔：30 。
-	- 保留位：reserved的值。
-
-5、添加节点。
-- Shadowrocket首页 - 右上角➕ - 类型WireGuard。
-
-- 填写配置信息，保存。
-
-`如何成为WARP+账户、如何申请CloudFlare Zero Trust团队账户，请自行Google学习。`
 ### 定位权限
 * iOS系统的要求，开启定位权限才能获取Wi-Fi名称。
 
